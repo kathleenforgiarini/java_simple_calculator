@@ -6,44 +6,49 @@ public class Operation {
 	private double number2;
 	
 	public Operation() {
-		number1 = 0;
-		number2 = 0;
+		this.number1 = 0;
+		this.number2 = 0;
+	}
+	
+	public Operation(double op1, double op2) {
+		this.number1 = op1;
+		this.number2 = op2;
 	}
 	
 	public double getNumber1() {
-		return number1;
+		return this.number1;
 	}
 	
 	public void setNumber1(double n1) {
-		number1 = n1;
+		this.number1 = n1;
 	}
 	
 	public double getNumber2() {
-		return number2;
+		return this.number2;
 	}
 	
 	public void setNumber2(double n2) {
-		number2 = n2;
+		this.number2 = n2;
 	}
 
     public double Add()
     {
-        return number1 + number2;
+        return this.number1 + this.number2;
     }
 
     public double Sub()
     {
-        return number1 - number2;
+        return this.number1 - this.number2;
     }
 
     public double Mult()
     {
-        return number1 * number2;
+        return this.number1 * this.number2;
     }
 
     public double Div()
     {
-        return number1 / number2;
+        return this.number1 / this.number2;
     }
 
 }
